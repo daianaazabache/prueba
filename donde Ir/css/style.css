@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Francois+One&family=Limelight&family=Roboto+Serif:wght@100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos del NAV*/
+.nav-color {  
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #059EE1;
+    box-shadow: 0.5px 0.5px 4px #000;
+}
+
+.slide{
+    padding-top: 57px;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+.titulo-provincia{
+    color: #00a7e1;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-align: left;
+    max-width: 48em
+}
+
+p{
+    width: 80%;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 3rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.titulo-lugar-popular{
+    color: #00a7e1;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 48em
+}
+
+.descubri-destinos{
+    text-align: center;
+    color: darkgrey;
+}
+
+/*CARD*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    height: 80vh;
+    margin-bottom: 20px;
+}
+.contenedor .figura{
+    position:relative;
+    height: 450px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    margin: 10px;
+}
+.contenedor .figura img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+}
+.contenedor .figura .texto-card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    opacity: 100% ;
+    text-align: center;
+    display: block;
+}
+
+.contenedor .figura:hover> .texto-card{
+    visibility: visible;
+    opacity: calc(0.3);    
+}
+
+.contenedor .figura:hover>img{
+    transform: scale(1.3);
+    transform: translateY(-98px, 0px, 0px);
+}
+.contenedor .figura .texto-card h3{
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: 350px;
+    font-family:Bebas Neue;
+    font-size: 33px;
+}
+/*CARD*/
+
+
+/*FOOTER*/
+.resolution{
+    width: 99%;
+    text-align: center;
+}
+
+.espaciado-flex {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+body, nav{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer{
+    color: #ffff;
+}
+
+footer a,li{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+footer li {
+    text-align: left;
+}
+.centrado {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+
+}
+.mapa iframe {
+    height: 18vh;
+    width: auto;
+}
+
+footer {
+    background-color: #059EE1;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    
+}
+/*FOOTER*/
+
+
+
+
+@media (max-width: 500px){
+/*CARD*/
+    .contenedor{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .figura{
+    height: 300px;
+    width: 200px;
+}
+
+.contenedor .figura img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+}
+
+.contenedor .figura .texto-card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    opacity: 100% ;
+    text-align: center;
+    display: block;
+}
+
+.contenedor .figura:hover> .texto-card{
+    visibility: visible;
+    opacity: calc(0.3);    
+}
+
+.contenedor .figura:hover>img{
+    transform: scale(1.3);
+    transform: translateY(-98px, 0px, 0px);
+}
+.contenedor .figura .texto-card h3{
+    color: rgb(255, 253, 253);
+    font-weight: 100;
+    padding-top: 250px;
+    font-family:Bebas Neue;
+    font-size: 20px;
+}
+/*CARD*/
+.titulo-provincia{
+    font-size: 2em;
+}
+
+.titulo-lugar-popular{
+    font-size: 2em;
+}
+
+.descubri-destinos{
+    font-size: 1em;
+    padding-bottom: 5px;
+    margin-top: 1px;
+}
+
+p{
+    font-size:3vh;
+}
+
+}
+
+
+
+
+
